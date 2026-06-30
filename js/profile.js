@@ -14,11 +14,11 @@ window.addEventListener("scroll", () => {
 
 });
 
-const enterBtn = document.querySelector(".next-btn");
+const nextBtn = document.querySelector(".next-btn");
 
-if (enterBtn) {
+if (nextBtn) {
 
-    enterBtn.addEventListener("click", function(event){
+    nextBtn.addEventListener("click", function(event){
         
         // すぐページ移動しないようにする
         event.preventDefault();

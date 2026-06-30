@@ -271,3 +271,21 @@ body.fade-out{
     z-index:9999;
 
 }
+
+#transition-message.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+#transition-message p{
+
+    color:#d4af37;
+
+    font-size:22px;
+
+    letter-spacing:4px;
+
+}
