@@ -26,22 +26,29 @@ book.addEventListener("click", () => {
 
 const enterBtn = document.querySelector(".enter-btn");
 
-enterBtn.addEventListener("click", function(event){
+if (enterBtn) {
 
-    // すぐページ移動しないようにする
-    event.preventDefault();
+    enterBtn.addEventListener("click", function(event){
+        
+        // すぐページ移動しないようにする
+        event.preventDefault();
 
-    // リンク先を取得
-    const url = this.href;
+        // リンク先を取得
+        const url = this.href;
 
-    // bodyにfade-outを付ける
-    document.body.classList.add("fade-out");
+        //　メッセージ表示
+        document.getElementById("transition-message").classList.add("show");
 
-    // 0.8秒後にページ移動
-    setTimeout(function(){
+        // bodyにfade-outを付ける
+        document.body.classList.add("fade-out");
 
-        window.location.href = url;
+        // 0.8秒後にページ移動
+        setTimeout(() => {
 
-    },800);
+            window.location.href = url;
 
-});
+        },1500);
+
+    });
+
+}
