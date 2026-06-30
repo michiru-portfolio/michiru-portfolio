@@ -26,7 +26,7 @@
 
 padding:120px 10%;
 
-background:#151b23;
+background:#111827;
 
 }
 
@@ -133,5 +133,141 @@ transition:1s;
 opacity:1;
 
 transform:translateY(0);
+
+}
+
+/* ===========================
+   次のページボタン
+=========================== */
+
+.next-page{
+
+    text-align:center;
+
+    margin-top:120px;
+
+}
+
+.next-page p{
+
+    color:#d9d9d9;
+
+    line-height:2;
+
+    margin-bottom:40px;
+
+}
+
+.next-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:18px 38px;
+
+    border:2px solid #d4af37;
+
+    border-radius:50px;
+
+    color:#d4af37;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    transition:.4s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.next-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-100%;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(212,175,55,.2);
+
+    transition:.5s;
+
+}
+
+.next-btn:hover::before{
+
+    left:100%;
+
+}
+
+.next-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 30px rgba(212,175,55,.3);
+
+}
+
+.arrow{
+
+    transition:.3s;
+
+}
+
+.next-btn:hover .arrow{
+
+    transform:translateX(8px);
+
+}
+
+/*　フェード用　*/
+body{
+  opacity:1;
+  transition:opacity .8s ease;
+}
+
+/*　暗転　*/
+body.fade-out{
+  opacity:0;
+}
+
+/* ===========================
+   ページ遷移メッセージ
+=========================== */
+
+#transition-message{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,.9);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:opacity .8s;
+
+    z-index:9999;
 
 }
