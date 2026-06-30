@@ -123,3 +123,14 @@ color:#d4af37;
 opacity:1;
 
 }
+
+/*　フェード用　*/
+body{
+  opacity:1;
+  transition:opacity .8s ease;
+}
+
+/*　暗転　*/
+body.fade-out{
+  opacity:0;
+}
