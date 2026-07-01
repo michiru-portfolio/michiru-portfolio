@@ -18,6 +18,11 @@ transition:1s;
 
 }
 
+.overlay.hide{
+opacity:0;
+visibility:hidden;
+}
+
 .book{
 
 width:220px;
