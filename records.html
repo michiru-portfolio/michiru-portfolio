@@ -15,98 +15,127 @@
 
 <body>
 
-<section class="records">
+<header class="page-header">
 
-    <h2>The Grand Library</h2>
+    <h1>Records</h1>
 
-    <p class="sub">
-        「こちらが主人の制作記録でございます。」
-    </p>
+    <p>Grand Library</p>
 
-    <div class="cards">
+</header>
 
-        <!-- Book Card -->
-        <div class="book-card">
+<main>
 
-            <div class="book-cover">
+<section class="records-container">
 
-                <div class="volume">
-                    Volume I
-                </div>
+    <article class="record-card">
 
-                <div class="thumbnail">
+        <div class="thumbnail">
 
-                    Coming Soon
-
-                </div>
-
-            </div>
-
-            <div class="book-content">
-
-                <h3>📜 Portfolio Site</h3>
-
-                <p class="language">
-                    HTML / CSS / JavaScript
-                </p>
-
-                <div class="info">
-
-                    <p><strong>📅 制作日</strong><br>2026年7月</p>
-
-                    <p><strong>⏰ 制作期間</strong><br>約2週間</p>
-
-                    <p><strong>🛠 使用技術</strong><br>
-                    HTML / CSS / JavaScript</p>
-
-                    <p>
-                        <strong>💡 工夫したポイント</strong><br>
-
-                        ・洋館をイメージしたデザイン<br>
-                        ・ページ遷移アニメーション<br>
-                        ・レスポンシブ対応
-                    </p>
-
-                </div>
-
-                <a href="portfolio-site.html"
-                class="transition-link open-book"
-                data-message="Opening the Record..."
-                data-icon="📖"
-                >
-
-                    📖 本を開く
-
-                </a>
-
-            </div>
+            <img src="images/records/portfolio.png"
+                 alt="Portfolio Site">
 
         </div>
 
-    </div>
+        <div class="record-content">
+
+            <h2>📖 Volume I</h2>
+
+            <h3>Portfolio Site</h3>
+
+            <p>
+                異世界の館をテーマに制作した
+                ポートフォリオサイトです。
+            </p>
+
+            <ul class="record-data">
+
+                <li><strong>制作日：</strong>2026年7月</li>
+
+                <li><strong>制作期間：</strong>約2週間</li>
+
+                <li><strong>使用技術：</strong>HTML / CSS / JavaScript</li>
+
+                <li><strong>工夫：</strong>世界観・ページ遷移・アニメーション</li>
+
+            </ul>
+
+            <a
+
+                href="portfolio-site.html"
+
+                class="transition-link open-book"
+
+                data-message="Opening the Record..."
+
+                data-icon="📖"
+
+            >
+
+                📖 本を開く
+
+            </a>
+
+        </div>
+
+    </article>
 
 </section>
 
-
-<!--Records →　Gallery-->
-<div class="next-page">
+<section class="next-page">
 
     <p>
-        制作記録をご覧いただき、ありがとうございました。<br>
-        続いて、主人が描いた作品をご案内いたします。
+
+        制作記録をご覧いただき、
+        誠にありがとうございました。
+
+        <br>
+
+        続いて、美術館へご案内いたします。
+
     </p>
 
-    <a href="gallery.html"
-    class="transition-link next-btn"
-    data-message="Entering the Art Gallery ..."
-    data-icon="🎨"
+    <a
+
+        href="gallery.html"
+
+        class="transition-link next-btn"
+
+        data-message="Entering the Art Gallery..."
+
+        data-icon="🎨"
+
     >
 
-        <span>🎨 美術館へ向かう</span>
-
-        <span class="arrow">→</span>
+        🖼 美術館へ向かう
 
     </a>
+
+</section>
+
+</main>
+
+<div id="transition-message">
+
+    <div class="transition-content">
+
+        <div class="line"></div>
+
+        <p id="transition-text">
+
+            Loading...
+
+        </p>
+
+        <div id="transition-icon"
+             class="book-icon">
+
+            📖
+
+        </div>
+
+        <div class="line"></div>
+
+    </div>
 
 </div>
 
