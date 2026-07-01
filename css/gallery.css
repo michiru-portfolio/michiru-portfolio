@@ -1,0 +1,127 @@
+/* ===========================
+Header
+=========================== */
+
+.page-header{
+
+text-align:center;
+
+margin:100px 0 70px;
+
+}
+
+.page-header h1{
+
+font-size:48px;
+
+color:#d4af37;
+
+}
+
+.page-header p{
+
+margin-top:15px;
+
+letter-spacing:3px;
+
+}
+
+/* ===========================
+Gallery
+=========================== */
+
+.gallery-grid{
+
+max-width:1100px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+
+}
+
+.art-card{
+
+background:#1b2430;
+
+border:2px solid #d4af37;
+
+border-radius:20px;
+
+overflow:hidden;
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+.art-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 30px rgba(212,175,55,.3);
+
+}
+
+.art-card img{
+
+width:100%;
+
+display:block;
+
+}
+
+.caption{
+
+padding:25px;
+
+}
+
+.caption h2{
+
+color:#d4af37;
+
+margin-bottom:10px;
+
+}
+
+/* ===========================
+Lightbox
+=========================== */
+
+#lightbox{
+
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.95);
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:9999;
+
+}
+
+#lightbox img{
+
+max-width:85%;
+
+max-height:85%;
+
+border:3px solid #d4af37;
+
+border-radius:20px;
+
+cursor:pointer;
+
+}

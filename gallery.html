@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Gallery</title>
+
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/gallery.css">
+
+</head>
+
+<body>
+
+<header class="page-header">
+
+<h1>Gallery</h1>
+
+<p>Art Exhibition Hall</p>
+
+</header>
+
+<main>
+
+<section class="gallery-grid">
+
+<div class="art-card">
+
+<img src="images/gallery/sample1.jpg" alt="作品1">
+
+<div class="caption">
+
+<h2>Original Character</h2>
+
+<p>創作キャラクター</p>
+
+</div>
+
+</div>
+
+<div class="art-card">
+
+<img src="images/gallery/sample2.jpg" alt="作品2">
+
+<div class="caption">
+
+<h2>Fantasy Girl</h2>
+
+<p>創作イラスト</p>
+
+</div>
+
+</div>
+
+<div class="art-card">
+
+<img src="images/gallery/sample3.jpg" alt="作品3">
+
+<div class="caption">
+
+<h2>Character Design</h2>
+
+<p>キャラクターデザイン</p>
+
+</div>
+
+</div>
+
+<div class="art-card">
+
+<img src="images/gallery/sample4.jpg" alt="作品4">
+
+<div class="caption">
+
+<h2>Concept Art</h2>
+
+<p>世界観デザイン</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="next-page">
+
+<p>
+
+美術館をご覧いただき
+ありがとうございました。
+
+<br>
+
+続いて、
+主人の知識をご紹介いたします。
+
+</p>
+
+<a
+
+href="skills.html"
+
+class="transition-link next-btn"
+
+data-message="Entering the Hall of Knowledge..."
+
+data-icon="🕯️"
+
+>
+
+🕯️ 知識の間へ向かう
+
+</a>
+
+</section>
+
+</main>
+
+<!-- モーダル -->
+
+<div id="lightbox">
+
+<img id="lightbox-img">
+
+</div>
+
+<div id="transition-message">
+
+<div class="transition-content">
+
+<div class="line"></div>
+
+<p id="transition-text">
+
+Loading...
+
+</p>
+
+<div
+id="transition-icon"
+class="book-icon">
+
+📖
+
+</div>
+
+<div class="line"></div>
+
+</div>
+
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/gallery.js"></script>
+
+</body>
+
+</html>
