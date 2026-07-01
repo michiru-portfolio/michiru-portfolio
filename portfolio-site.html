@@ -4,7 +4,6 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
@@ -17,7 +16,7 @@
 
 <body>
 
-<header>
+<header class="page-header">
 
     <h1>📖 Volume I</h1>
 
@@ -25,38 +24,33 @@
 
 </header>
 
-<main class="record-page">
+<main class="portfolio-page">
 
-    <!-- サムネイル -->
+    <section class="thumbnail">
 
-    <section class="thumbnail-area">
-
-        <img src="images/records/portfolio.png"
-             alt="Portfolio Site">
+        <img
+            src="images/records/portfolio.png"
+            alt="Portfolio Site">
 
     </section>
 
-    <!-- 作品紹介 -->
-
-    <section class="record-info">
+    <section class="record-section">
 
         <h2>作品概要</h2>
 
         <p>
 
-            異世界風の執事をテーマにした
+            「異世界の館」をテーマに制作した
             ポートフォリオサイトです。
 
-            HTML・CSS・JavaScriptを使用して
-            制作しました。
+            HTML・CSS・JavaScriptを用いて
+            デザインから実装まで行いました。
 
         </p>
 
     </section>
 
-    <!-- 制作情報 -->
-
-    <section class="record-info">
+    <section class="record-section">
 
         <h2>制作日</h2>
 
@@ -64,7 +58,7 @@
 
     </section>
 
-    <section class="record-info">
+    <section class="record-section">
 
         <h2>制作期間</h2>
 
@@ -72,86 +66,84 @@
 
     </section>
 
-    <section class="record-info">
+    <section class="record-section">
 
         <h2>使用技術</h2>
 
         <ul>
 
             <li>HTML5</li>
-
             <li>CSS3</li>
-
             <li>JavaScript</li>
 
         </ul>
 
     </section>
 
-    <section class="record-info">
+    <section class="record-section">
 
         <h2>工夫したポイント</h2>
 
         <ul>
 
-            <li>洋館をテーマにデザイン</li>
-
+            <li>異世界の館をテーマに統一</li>
             <li>ページ遷移アニメーション</li>
-
-            <li>レスポンシブ対応</li>
-
-            <li>スクロールアニメーション</li>
+            <li>レスポンシブ対応予定</li>
+            <li>世界観を意識したデザイン</li>
 
         </ul>
 
     </section>
 
-    <!-- GitHub -->
-
-    <section class="record-info">
+    <section class="record-section">
 
         <h2>GitHub</h2>
 
-        <a href="https://github.com/〇〇"
-           target="_blank">
+        <a
+            href="#"
+            target="_blank">
 
-            GitHubを見る
+            GitHub Repository
 
         </a>
 
     </section>
 
-    <!-- 公開サイト -->
-
-    <section class="record-info">
+    <section class="record-section">
 
         <h2>Live Demo</h2>
 
-        <a href="https://〇〇.github.io/"
-           target="_blank">
+        <a
+            href="#"
+            target="_blank">
 
-            サイトを見る
+            GitHub Pages
 
         </a>
 
     </section>
 
-    <!-- 本を閉じる -->
+    <section class="next-page">
 
-    <div class="close-area">
+        <a
 
-        <a href="records.html"
-           class="close-book">
+            href="records.html"
+
+            class="transition-link close-book"
+
+            data-message="Closing the Record..."
+
+            data-icon="📕"
+
+        >
 
             📕 本を閉じる
 
         </a>
 
-    </div>
+    </section>
 
 </main>
-
-<!-- ページ遷移 -->
 
 <div id="transition-message">
 
@@ -159,7 +151,18 @@
 
         <div class="line"></div>
 
-        <p>Closing the Record...</p>
+        <p id="transition-text">
+
+            Loading...
+
+        </p>
+
+        <div id="transition-icon"
+             class="book-icon">
+
+            📖
+
+        </div>
 
         <div class="line"></div>
 
@@ -168,7 +171,6 @@
 </div>
 
 <script src="js/common.js"></script>
-
 <script src="js/portfolio-site.js"></script>
 
 </body>
