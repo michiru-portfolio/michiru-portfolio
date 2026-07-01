@@ -1,0 +1,139 @@
+/* ===========================
+Header
+=========================== */
+
+.page-header{
+
+    text-align:center;
+
+    margin:100px 0 70px;
+
+}
+
+.page-header h1{
+
+    font-size:48px;
+
+    color:#d4af37;
+
+}
+
+.page-header p{
+
+    margin-top:15px;
+
+    color:#d9d9d9;
+
+    letter-spacing:3px;
+
+}
+
+/* ===========================
+Contact
+=========================== */
+
+.contact-card{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:#1b2430;
+
+    border:2px solid #d4af37;
+
+    border-radius:20px;
+
+    padding:50px;
+
+    text-align:center;
+
+}
+
+.contact-card h2{
+
+    color:#d4af37;
+
+    margin-bottom:25px;
+
+}
+
+.contact-card p{
+
+    line-height:2;
+
+}
+
+/* ===========================
+Links
+=========================== */
+
+.link-area{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin:70px 0;
+
+    flex-wrap:wrap;
+
+}
+
+.contact-link{
+
+    display:inline-block;
+
+    padding:18px 40px;
+
+    border:2px solid #d4af37;
+
+    border-radius:50px;
+
+    color:#d4af37;
+
+    transition:.3s;
+
+}
+
+.contact-link:hover{
+
+    background:#d4af37;
+
+    color:#0f172a;
+
+    transform:translateY(-5px);
+
+}
+
+/* ===========================
+Ending
+=========================== */
+
+.ending{
+
+    text-align:center;
+
+    margin:100px 0;
+
+}
+
+.ending h2{
+
+    color:#d4af37;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.ending p{
+
+    color:#d9d9d9;
+
+    letter-spacing:2px;
+
+}
