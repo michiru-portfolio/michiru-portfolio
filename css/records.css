@@ -1,86 +1,191 @@
 .records{
 
     padding:120px 10%;
-
     text-align:center;
 
 }
 
 .records h2{
 
-    font-size:42px;
-
     color:#d4af37;
-
+    font-size:48px;
     margin-bottom:15px;
+    font-family:"Cinzel",serif;
 
 }
 
 .sub{
 
-    color:#ccc;
-
-    margin-bottom:70px;
+    color:#d9d9d9;
+    margin-bottom:80px;
 
 }
+
+/* 本棚 */
 
 .cards{
 
     display:flex;
-
     justify-content:center;
-
     flex-wrap:wrap;
-
-    gap:40px;
+    gap:50px;
 
 }
 
-.card{
+/* 魔導書 */
 
-    width:300px;
+.book-card{
 
-    padding:35px;
-
-    border:2px solid #d4af37;
-
-    border-radius:12px;
+    width:360px;
 
     background:#1b2430;
 
-    transition:.3s;
+    border:2px solid #d4af37;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    position:relative;
 
 }
 
-.card:hover{
+/* ホバー */
 
-    transform:translateY(-10px);
+.book-card:hover{
 
-    box-shadow:0 0 25px rgba(212,175,55,.4);
+    transform:translateY(-12px);
+
+    box-shadow:0 0 35px rgba(212,175,55,.4);
 
 }
 
-.card h3{
+/* 金色の光 */
+
+.book-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:60%;
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+
+    transition:.8s;
+
+}
+
+.book-card:hover::before{
+
+    left:150%;
+
+}
+
+/* 表紙 */
+
+.book-cover{
+
+    padding:25px;
+
+}
+
+.volume{
+
+    color:#d4af37;
+
+    letter-spacing:3px;
 
     margin-bottom:20px;
 
 }
 
-.card p{
+/* サムネイル */
 
-    margin-bottom:30px;
+.thumbnail{
 
-    color:#ddd;
+    width:100%;
+
+    height:220px;
+
+    border:2px dashed #d4af37;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#d4af37;
+
+    border-radius:10px;
 
 }
 
-.card a{
+/* 本文 */
 
-    display:inline-block;
+.book-content{
 
-    padding:10px 25px;
+    padding:30px;
+
+    text-align:left;
+
+}
+
+.book-content h3{
+
+    margin-bottom:15px;
+
+}
+
+.language{
+
+    color:#d4af37;
+
+    margin-bottom:25px;
+
+}
+
+.info p{
+
+    margin-bottom:20px;
+
+    line-height:1.8;
+
+}
+
+.info strong{
+
+    color:#d4af37;
+
+}
+
+/* ボタン */
+
+.open-book{
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:30px;
+
+    padding:15px;
 
     border:1px solid #d4af37;
+
+    border-radius:50px;
 
     color:#d4af37;
 
@@ -88,7 +193,7 @@
 
 }
 
-.card a:hover{
+.open-book:hover{
 
     background:#d4af37;
 
@@ -96,20 +201,120 @@
 
 }
 
-.card{
+.book-card{
 
-    opacity:0;
+    opacity:1;
 
-    transform:translateY(50px);
+    transform:translateY(0);
 
 }
 
-.card.show{
+.book-card.show{
 
     opacity:1;
 
     transform:translateY(0);
 
     transition:1s;
+
+}
+
+/* ===========================
+   ページ遷移
+=========================== */
+
+body{
+
+    opacity:1;
+
+    transition:opacity .8s ease;
+
+}
+
+body.fade-out{
+
+    opacity:0;
+
+}
+
+#transition-message{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(8,8,10,.95);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.8s;
+
+    z-index:9999;
+
+}
+
+#transition-message.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.transition-content{
+
+    text-align:center;
+
+}
+
+.transition-content p{
+
+    color:#d4af37;
+
+    font-size:28px;
+
+    letter-spacing:6px;
+
+    margin:30px 0;
+
+    font-family:"Cinzel", serif;
+
+    animation:fadeText 1s infinite alternate;
+
+}
+
+.line{
+
+    width:260px;
+
+    height:2px;
+
+    background:#d4af37;
+
+    margin:auto;
+
+}
+
+@keyframes fadeText{
+
+    from{
+
+        opacity:.5;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
 
 }

@@ -15,70 +15,106 @@
 
 <body>
 
-<header>
-
-    <div class="logo">
-        Michiru's Mansion
-    </div>
-
-    <nav>
-
-        <a href="index.html">Welcome</a>
-        <a href="profile.html">Profile</a>
-        <a href="records.html">Records</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="skills.html">Skills</a>
-        <a href="contact.html">Contact</a>
-
-    </nav>
-
-</header>
-
 <section class="records">
 
-    <h2>Records</h2>
+    <h2>The Grand Library</h2>
 
     <p class="sub">
-
         「こちらが主人の制作記録でございます。」
-
     </p>
 
     <div class="cards">
 
-        <div class="card">
+        <!-- Book Card -->
+        <div class="book-card">
 
-            <h3>📜 ToDoアプリ</h3>
+            <div class="book-cover">
 
-            <p>HTML / CSS / JavaScript</p>
+                <div class="volume">
+                    Volume I
+                </div>
 
-            <a href="#">詳細を見る</a>
+                <div class="thumbnail">
 
-        </div>
+                    Coming Soon
 
-        <div class="card">
+                </div>
 
-            <h3>🌐 ポートフォリオサイト</h3>
+            </div>
 
-            <p>HTML / CSS</p>
+            <div class="book-content">
 
-            <a href="#">詳細を見る</a>
+                <h3>📜 Portfolio Site</h3>
 
-        </div>
+                <p class="language">
+                    HTML / CSS / JavaScript
+                </p>
 
-        <div class="card">
+                <div class="info">
 
-            <h3>🧮 家計簿アプリ</h3>
+                    <p><strong>📅 制作日</strong><br>2026年7月</p>
 
-            <p>Python</p>
+                    <p><strong>⏰ 制作期間</strong><br>約2週間</p>
 
-            <a href="#">詳細を見る</a>
+                    <p><strong>🛠 使用技術</strong><br>
+                    HTML / CSS / JavaScript</p>
+
+                    <p>
+                        <strong>💡 工夫したポイント</strong><br>
+
+                        ・洋館をイメージしたデザイン<br>
+                        ・ページ遷移アニメーション<br>
+                        ・レスポンシブ対応
+                    </p>
+
+                </div>
+
+                <a href="portfolio-site.html" class="open-book">
+
+                    📖 本を開く
+
+                </a>
+
+            </div>
 
         </div>
 
     </div>
 
 </section>
+
+<!-- ページ遷移演出 -->
+<div id="transition-message">
+
+    <div class="transition-content">
+
+        <div class="line"></div>
+
+        <p>Opening the Record...</p>
+
+        <div class="line"></div>
+
+    </div>
+
+</div>
+
+<!--Records →　Gallery-->
+<div class="next-page">
+
+    <p>
+        制作記録をご覧いただき、ありがとうございました。<br>
+        続いて、主人が描いた作品をご案内いたします。
+    </p>
+
+    <a href="gallery.html" class="next-btn">
+
+        <span>🖼 美術館へ向かう</span>
+
+        <span class="arrow">→</span>
+
+    </a>
+
+</div>
 
 <script src="js/common.js"></script>
 <script src="js/records.js"></script>

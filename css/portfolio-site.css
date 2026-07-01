@@ -1,0 +1,278 @@
+/* ===========================
+   Portfolio Site
+=========================== */
+
+.record-page{
+
+    max-width:1000px;
+
+    margin:120px auto;
+
+    padding:40px;
+
+}
+
+/* タイトル */
+
+header{
+
+    text-align:center;
+
+    margin:80px 0 50px;
+
+}
+
+header h1{
+
+    color:#d4af37;
+
+    font-size:48px;
+
+    letter-spacing:4px;
+
+    margin-bottom:15px;
+
+}
+
+header p{
+
+    color:#d9d9d9;
+
+    font-size:20px;
+
+}
+
+/* ===========================
+   サムネイル
+=========================== */
+
+.thumbnail-area{
+
+    margin-bottom:60px;
+
+}
+
+.thumbnail-area img{
+
+    width:100%;
+
+    border:2px solid #d4af37;
+
+    border-radius:15px;
+
+    display:block;
+
+}
+
+/* ===========================
+   情報カード
+=========================== */
+
+.record-info{
+
+    background:#1b2430;
+
+    border:2px solid #d4af37;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    margin-bottom:30px;
+
+    transition:.4s;
+
+}
+
+.record-info:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px rgba(212,175,55,.3);
+
+}
+
+.record-info h2{
+
+    color:#d4af37;
+
+    margin-bottom:20px;
+
+}
+
+.record-info p,
+.record-info li{
+
+    color:#f5f5f5;
+
+    line-height:2;
+
+}
+
+.record-info ul{
+
+    padding-left:20px;
+
+}
+
+.record-info a{
+
+    color:#d4af37;
+
+}
+
+/* ===========================
+   本を閉じるボタン
+=========================== */
+
+.close-area{
+
+    text-align:center;
+
+    margin:80px 0;
+
+}
+
+.close-book{
+
+    display:inline-block;
+
+    padding:18px 40px;
+
+    border:2px solid #d4af37;
+
+    border-radius:50px;
+
+    color:#d4af37;
+
+    transition:.4s;
+
+}
+
+.close-book:hover{
+
+    background:#d4af37;
+
+    color:#111827;
+
+    transform:translateY(-5px);
+
+}
+
+/* ===========================
+   ページ遷移
+=========================== */
+
+body{
+
+    opacity:1;
+
+    transition:.8s;
+
+}
+
+body.fade-out{
+
+    opacity:0;
+
+}
+
+#transition-message{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.95);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.8s;
+
+    z-index:9999;
+
+}
+
+#transition-message.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.transition-content{
+
+    text-align:center;
+
+}
+
+.line{
+
+    width:260px;
+
+    height:2px;
+
+    background:#d4af37;
+
+    margin:auto;
+
+}
+
+.transition-content p{
+
+    color:#d4af37;
+
+    font-size:28px;
+
+    letter-spacing:5px;
+
+    margin:25px 0;
+
+}
+
+/* 本アイコン */
+
+.transition-content::after{
+
+    content:"📖";
+
+    display:block;
+
+    font-size:50px;
+
+    margin-top:30px;
+
+    animation:bookOpen 1.5s infinite;
+
+}
+
+@keyframes bookOpen{
+
+    0%{
+
+        transform:rotateY(0deg);
+
+    }
+
+    50%{
+
+        transform:rotateY(35deg);
+
+    }
+
+    100%{
+
+        transform:rotateY(0deg);
+
+    }
+
+}
