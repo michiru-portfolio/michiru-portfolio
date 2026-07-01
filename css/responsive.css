@@ -141,3 +141,47 @@ width:100%;
 }
 
 }
+
+/* ===========================
+   Header
+=========================== */
+
+@media(max-width:768px){
+
+.site-header{
+
+    flex-direction: column;
+
+    padding: 20px;
+
+    gap: 20px;
+
+}
+
+.site-header nav ul{
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 18px;
+
+}
+
+.logo a{
+
+    font-size: 24px;
+
+}
+
+/* Footer */
+
+.footer-links{
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+}
