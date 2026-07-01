@@ -1,74 +1,163 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/profile.css">
-    </head>
-    <body>
-        <body class="fade-in">
-        <section class="profile" id="profile">
 
-        <h2>Profile</h2>
+<head>
 
-        <p class="sub">
-            主人について
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/profile.css">
+
+</head>
+
+<body>
+
+<header class="page-header">
+
+    <h1>Profile</h1>
+
+    <p>
+        主人についてご紹介いたします
+    </p>
+
+</header>
+
+<main>
+
+<section class="profile-card">
+
+    <div class="profile-image">
+
+        <img
+            src="images/character/butler.png"
+            alt="執事">
+
+    </div>
+
+    <div class="profile-text">
+
+        <h2>Michiru</h2>
+
+        <p>
+
+            HTML・CSS・JavaScriptを中心に
+            Web制作を学習しています。
+
+            「見ていて楽しいサイト」を
+            作ることが好きです。
+
         </p>
 
-        <div class="profile-box">
+    </div>
 
-            <div class="profile-image">
+</section>
 
-                Coming Soon
+<section class="profile-info">
 
-            </div>
+    <div class="info-box">
 
-            <div class="profile-text">
+        <h3>🎨 Hobby</h3>
 
-                <h3>みちる</h3>
+        <p>
 
-                <h4>Programmer × Illustrator</h4>
+            創作イラスト・キャラクターデザイン
 
-                <p>
+        </p>
 
-                    はじめまして。
+    </div>
 
-                    Web制作とイラスト制作を学びながら、
-                    一つひとつ丁寧な作品づくりを心掛けています。
+    <div class="info-box">
 
-                    ご依頼いただいた作品は、
-                    誠実に対応させていただきます。
+        <h3>💻 Learning</h3>
 
-                </p>
+        <p>
 
-            </div>
+            HTML / CSS / JavaScript
+
+        </p>
+
+    </div>
+
+    <div class="info-box">
+
+        <h3>🎯 Goal</h3>
+
+        <p>
+
+            Web制作とイラスト制作の
+            両方で活動すること。
+
+        </p>
+
+    </div>
+
+</section>
+
+<section class="next-page">
+
+    <p>
+
+        主人についてご覧いただき、
+        誠にありがとうございました。
+
+        <br>
+
+        続いて、制作記録をご案内いたします。
+
+    </p>
+
+    <a
+
+    href="records.html"
+
+    class="transition-link next-btn"
+
+    data-message="Proceeding to the Library..."
+
+    data-icon="📚"
+
+    >
+
+        📖 書庫の扉を開く
+
+    </a>
+
+</section>
+
+</main>
+
+<div id="transition-message">
+
+    <div class="transition-content">
+
+        <div class="line"></div>
+
+        <p id="transition-text">
+
+            Loading...
+
+        </p>
+
+        <div
+            id="transition-icon"
+            class="book-icon">
+
+            📖
 
         </div>
 
-        </section>
+        <div class="line"></div>
 
-        <div class="next-page">
+    </div>
 
-            <p>
-                主人についてのご紹介は以上でございます。<br>
-                よろしければ、制作記録をご覧ください。
-            </p>
+</div>
 
-            <a href="records.html"
-            class="transition-link next-btn"
-            data-message="The Records are Ready ..."
-            data-icon="📚"
-            >
+<script src="js/common.js"></script>
+<script src="js/profile.js"></script>
 
-                <span>📖 書庫への扉を開く</span>
+</body>
 
-                <span class="arrow">→</span>
-
-            </a>
-
-        </div>
-
-        <script src="js/common.js"></script>
-        <script src="js/profile.js"></script>
-
-    </body>
 </html>
